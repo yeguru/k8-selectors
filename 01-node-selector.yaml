@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: node-selector
+  name: taint
   labels:
-    purpose: "selector-demo"
+    purpose: "taint-demo"
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1d
+    topology.kubernetes.io/zone: us-east-1c
   containers:
   - name: nginx
     image: nginx
