@@ -26,6 +26,6 @@ spec:
             values:
             - pod-1
         topologyKey: topology.kubernetes.io/zone
-    containers:
+  containers:
     - name: with-node-affinity
       image: registry.k8s.io/pause:3.8    
